@@ -23,3 +23,38 @@ for(let posicion=0; posicion < juegos.length; posicion++){
 document.write(`<li>${juegos[posicion]}</li>`)
 }
 document.write(`</ul>`)
+
+//agregar elementos en el array
+//unshift es siempre al princio del array
+juegos.unshift('Dark soul', 'Dota')
+document.write(`<h2>Nuevo juego al principio del array🎮(${juegos.length})</h2>`)
+
+document.write(`<ul>`)
+for(let posicion=0; posicion < juegos.length; posicion++){
+document.write(`<li>${juegos[posicion]}</li>`)
+}
+document.write(`</ul>`)
+
+//agregar elementos al final
+
+juegos.push('Mario Bros')
+document.write(`<h2>Nuevo juego al final del array🎮(${juegos.length})</h2>`)
+
+document.write(`<ul>`)
+for(let posicion=0; posicion < juegos.length; posicion++){
+document.write(`<li>${juegos[posicion]}</li>`)
+}
+document.write(`</ul>`)
+
+
+// agregar elemento al medio splice tambien borra, agregar 0 para no borrar
+
+juegos.splice(5,0,'Terraria');
+document.write(`<h2>Nuevo juego al medio posicion 5 del array🎮(${juegos.length})</h2>`)
+
+document.write(`<ul>`)
+for(let posicion=0; posicion < juegos.length; posicion++){
+document.write(`<li>${juegos[posicion]}</li>`)
+}
+document.write(`</ul>`)
+
