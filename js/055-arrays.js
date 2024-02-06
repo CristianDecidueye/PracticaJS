@@ -96,7 +96,7 @@ document.write(`<li>${juegos[posicion]}</li>`)
 document.write(`</ul>`)
 
 
-// eliminar el  ultimo elemento es pop LOS ARRAY SIEMPRE CON ()
+// eliminar el  ultimo +elemento es pop LOS ARRAY SIEMPRE CON ()
 
 juegos.pop();
 document.write(`<h2>Borramos el ultimo elemento del array🎮(${juegos.length})</h2>`)
